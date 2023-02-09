@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:ital,wght@1,300&family=Nunito+Sans&family=Poppins&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
   <title>Studio present project</title>
 </head>
 <body>
@@ -67,7 +68,18 @@
 
    <!-- Showcase -->
    <div class="showcase">
-    <img src="./img/Video.png" alt="">
+    <img src="./img/slider-image-1.png" alt="" class="image-1">
+    <img src="./img/slider-image-2.jpg" alt="" class="image-2">
+    <img src="./img/slider-image-3.jpg" alt="" class="image-3">
+    <img src="./img/slider-image-4.jpg" alt="" class="image-4">
+    <i class="fa-solid fa-chevron-left" id="chevron-left"></i>
+    <i class="fa-solid fa-chevron-right" id="chevron-right"></i>
+    <div class="circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </div>
    </div> 
    
    <!-- Section One -->
@@ -148,11 +160,45 @@
     </div>
     <div class="products-slider">
       <div class="arrow-left">
-        <i class="fa-solid fa-arrow-left"></i>
+        <button class="arrow-left-icon">
+          <i class="fa-solid fa-arrow-left"></i>
+        </button>
       </div>
       <div class="arrow-right">
-        <i class="fa-solid fa-arrow-right"></i>
+        <button class="arrow-right-icon">
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
       </div>
+      <div class="products-images-before">
+        <div id="image-1">
+          <img src="./img/Rectangle 136.png" alt="">
+          <p>KESE I FOLIJE</p>
+          <div class="bottom-line-red"></div>
+        </div>
+        <div id="image-2">
+          <img src="./img/Rectangle 137.png" alt="">
+          <p>ZA KUHINJU</p>
+          <div class="bottom-line-red"></div>
+        </div>
+        <div id="image-3">
+          <img src="./img/Rectangle 138.png" alt="">
+          <p id="upper-text">UBRUSI I</p>
+          <p>TOALET PAPIRI</p>
+          <div class="bottom-line-red"></div>
+        </div>
+        <div id="image-4">
+          <img src="./img/Rectangle 139.png" alt="">
+          <p>KOZMETIKA</p>
+          <div class="bottom-line-red"></div>
+        </div>
+        <div id="image-5">
+          <img src="./img/Rectangle 141.png" alt="">
+          <p>PLASTICNE KANTE</p>
+          <div class="bottom-line-red"></div>
+        </div>
+      
+      </div>
+
       <div class="products-images">
         <div id="image-1">
           <img src="./img/Rectangle 136.png" alt="">

@@ -1,0 +1,36 @@
+@media (max-width: 1280px) {
+  .section-three {
+    padding-left: 0;
+    padding-right: 0.4rem;
+  }
+  .dvg-in-numbers .numbers p {
+    font-size: 1.1rem;
+  }
+  .products-slider .arrow-left {
+    width: 80px;
+  }
+  .products-slider .arrow-right {
+    width: 80px;
+  }
+  .products-slider .arrow-right-icon {
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 1024px) {
+  .nav-links .link {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .section-five .dvg-in-numbers {
+    left: 5%;
+  }
+  .section-five .numbers {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-bottom: 0;
+    padding-right: 2rem;
+  }
+  .section-five p {
+    font-size: 1rem;
+  }
+}

@@ -3,10 +3,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   font-family: Roboto;
+  overflow-x: hidden;
 }
 
 a {
@@ -167,9 +169,101 @@ li {
   padding-left: 1rem;
 }
 
+.showcase {
+  position: relative;
+}
+
+.showcase #chevron-left {
+  position: absolute;
+  color: #BF0F0F;
+  top: 40%;
+  left: 4%;
+  font-size: 3rem;
+}
+
+.showcase #chevron-right {
+  position: absolute;
+  color: #BF0F0F;
+  top: 40%;
+  right: 4%;
+  font-size: 3rem;
+}
+
 .showcase img {
   width: 100%;
-  height: 70vh;
+  height: 75vh;
+  display: none;
+  opacity: 0;
+}
+.showcase img.active {
+  display: block;
+  -webkit-animation-name: animate-image;
+          animation-name: animate-image;
+  animation-direction: alternate-reverse;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes animate-image {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes animate-image {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.showcase .circles {
+  position: absolute;
+  left: 45%;
+  bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.circles .circle-1,
+.circles .circle-2,
+.circles .circle-3,
+.circles .circle-4 {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #BF0F0F;
+  border-radius: 50%;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+.circles .circle-1:hover,
+.circles .circle-2:hover,
+.circles .circle-3:hover,
+.circles .circle-4:hover,
+.showcase #chevron-left:hover,
+.showcase #chevron-right:hover {
+  cursor: pointer;
+}
+
+.circles .circle-1.active,
+.circles .circle-2.active,
+.circles .circle-3.active,
+.circles .circle-4.active {
+  background-color: #BF0F0F;
 }
 
 .section-one {
@@ -199,7 +293,6 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 2rem;
 }
 .section-one .right-side .dvg-company {
   margin-bottom: 1rem;
@@ -252,7 +345,9 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-left: 3.5rem;
   padding-bottom: 6rem;
 }
@@ -396,24 +491,52 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  z-index: 1;
 }
 .section-six .arrow-left {
   color: #BF0F0F;
   position: absolute;
+  top: 44%;
+  left: 0%;
+  z-index: 1;
+  height: 337px;
+  width: 100px;
+  background-color: #f4f4f4;
+}
+.section-six .arrow-left .arrow-left-icon {
+  width: 35px;
+  height: 35px;
   padding: 0.4rem 0.5rem;
   border: 1px solid #BF0F0F;
   border-radius: 50%;
-  top: 65%;
-  left: 3%;
+  margin-left: 2rem;
+  margin-top: 8rem;
+  color: #BF0F0F;
 }
 .section-six .arrow-right {
   color: #BF0F0F;
   position: absolute;
+  top: 44%;
+  right: 0%;
+  z-index: 1;
+  height: 337px;
+  width: 100px;
+  background-color: #f4f4f4;
+}
+.section-six .arrow-right .arrow-right-icon {
+  width: 35px;
+  height: 35px;
   padding: 0.4rem 0.5rem;
   border: 1px solid #BF0F0F;
   border-radius: 50%;
-  top: 65%;
-  right: 3%;
+  margin-left: 2rem;
+  margin-top: 8.3rem;
+  color: #BF0F0F;
+}
+.section-six .arrow-left-icon i:hover,
+.section-six .arrow-right-icon i:hover {
+  cursor: pointer;
+  color: #df8787;
 }
 .section-six .products-images {
   display: -webkit-box;
@@ -429,8 +552,13 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
+  -webkit-transform: translateX(-580px);
+          transform: translateX(-580px);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  transition: -webkit-transform 1s ease-in;
+  transition: transform 1s ease-in;
+  transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+  z-index: -1;
 }
 .section-six .products-images img {
   width: 232px;
@@ -523,6 +651,120 @@ li {
   height: 3px;
   background-color: #BF0F0F;
 }
+.section-six .products-images-before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateX(-561px);
+          transform: translateX(-561px);
+  -webkit-transition: -webkit-transform 1s ease-in;
+  transition: -webkit-transform 1s ease-in;
+  transition: transform 1s ease-in;
+  transition: transform 1s ease-in, -webkit-transform 1s ease-in;
+  z-index: -1;
+  margin-right: 0.7rem;
+}
+.section-six .products-images-before img {
+  width: 232px;
+  height: 333px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.section-six .products-images-before #image-1 {
+  position: relative;
+}
+.section-six .products-images-before #image-1 p {
+  position: absolute;
+  top: 70%;
+  left: 14%;
+}
+.section-six .products-images-before #image-1 .bottom-line-red {
+  position: absolute;
+  top: 80%;
+  left: 14%;
+  width: 54px;
+  height: 3px;
+  background-color: #BF0F0F;
+}
+.section-six .products-images-before #image-2 {
+  position: relative;
+}
+.section-six .products-images-before #image-2 p {
+  position: absolute;
+  top: 70%;
+  left: 14%;
+}
+.section-six .products-images-before #image-2 .bottom-line-red {
+  position: absolute;
+  top: 80%;
+  left: 14%;
+  width: 54px;
+  height: 3px;
+  background-color: #BF0F0F;
+}
+.section-six .products-images-before #image-3 {
+  position: relative;
+}
+.section-six .products-images-before #image-3 #upper-text {
+  position: absolute;
+  top: 65%;
+  left: 14%;
+}
+.section-six .products-images-before #image-3 p {
+  position: absolute;
+  top: 70%;
+  left: 14%;
+}
+.section-six .products-images-before #image-3 .bottom-line-red {
+  position: absolute;
+  top: 80%;
+  left: 14%;
+  width: 54px;
+  height: 3px;
+  background-color: #BF0F0F;
+}
+.section-six .products-images-before #image-4 {
+  position: relative;
+}
+.section-six .products-images-before #image-4 p {
+  position: absolute;
+  top: 70%;
+  left: 14%;
+}
+.section-six .products-images-before #image-4 .bottom-line-red {
+  position: absolute;
+  top: 80%;
+  left: 14%;
+  width: 54px;
+  height: 3px;
+  background-color: #BF0F0F;
+}
+.section-six .products-images-before #image-5 {
+  position: relative;
+}
+.section-six .products-images-before #image-5 p {
+  position: absolute;
+  top: 70%;
+  left: 14%;
+}
+.section-six .products-images-before #image-5 .bottom-line-red {
+  position: absolute;
+  top: 80%;
+  left: 14%;
+  width: 54px;
+  height: 3px;
+  background-color: #BF0F0F;
+}
 
 .section-seven {
   display: -webkit-box;
@@ -607,7 +849,7 @@ li {
 }
 
 .section-eight {
-  background: url("/img/footer-image.png") center center/cover;
+  background: url("/img/footer-image.png") no-repeat center center/cover;
   width: 100%;
   height: 50vh;
   color: #fff;
@@ -618,8 +860,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 5rem;
-  padding-bottom: 2.6rem;
+  padding-top: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -639,6 +880,9 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-y: hidden;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .section-eight .company-logo {
   position: relative;
@@ -749,6 +993,10 @@ li {
   padding: 2rem 1rem 2rem 3rem;
   background-color: #333;
   opacity: 0.7;
+  overflow-y: hidden;
+}
+.section-eight .copyright p {
+  overflow-y: hidden;
 }
 .section-eight .copyright .with-bottom-line {
   border-bottom: 1px solid #fff;
