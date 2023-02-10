@@ -10,6 +10,8 @@
   $grey-color: #C4C4C466;
   $light-grey-color: #f4f4f4;
 
+
+  //  General styling  //////////////////////////////////
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +32,7 @@ li {
   list-style: none;
 }
 
+// Navbar /////////////////////////////////////////////
 .navbar-logo {
   display: flex;
   flex-direction: row;
@@ -195,7 +198,7 @@ li {
   }
 } 
 
-// Showcase
+// Showcase  ///////////////////////////////////
 .showcase {
   position: relative;
 }
@@ -279,7 +282,7 @@ li {
     background-color: $red-color;
   }
 
-// Section One
+// Section One  //////////////////////////////////////////////////
 .section-one {
   display: flex;
   flex-direction: row;
@@ -341,7 +344,7 @@ li {
     }
 }
 
-// Section Two
+// Section Two  ///////////////////////////////////////////////
 .section-two {
   img {
     width: 100%;
@@ -350,7 +353,7 @@ li {
   }
 }
 
-// Section Three
+// Section Three  /////////////////////////////////////////////
 .section-three {
   display: flex;
   flex-direction: row;
@@ -366,7 +369,7 @@ li {
   }
 }
 
-// Section Four
+// Section Four  //////////////////////////////////////////////////
 .section-four {
   display: flex;
   flex-direction: column;
@@ -394,10 +397,10 @@ li {
     }
 }
 
-// Section Five 
+// Section Five ////////////////////////////////////////////////
 .section-five {
   position: relative;
-  background: url('./img/Rectangle\ 140.png') center center/cover;
+  background: url('../img/Rectangle\ 140.png') center center/cover;
   width: 100%;
   height: 345px;
 
@@ -439,7 +442,7 @@ li {
     border-right: 1px solid #cb3e3e;
 }
 
-// Section Six 
+// Section Six  /////////////////////////////////////////////
 .section-six {
   display: flex;
   flex-direction: column;
@@ -742,6 +745,8 @@ li {
      }
 }
 
+// Section Seven  //////////////////////////////////////////////
+
 .section-seven {
   display: flex;
   flex-direction: column;
@@ -804,9 +809,9 @@ li {
      }
 }
 
-// Section Eight
+// Section Eight  ////////////////////////////////////////////
 .section-eight {
-  background: url('./img/footer-image.png') no-repeat center center/cover;
+  background: url('../img/footer-image.png') no-repeat center center/cover;
   width: 100%;
   height: 50vh;
   color: #fff;
