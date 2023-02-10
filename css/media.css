@@ -33,4 +33,87 @@
   .section-five p {
     font-size: 1rem;
   }
+  .section-eight {
+    height: 60vh;
+  }
+  .section-eight .upper-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-eight .upper-footer .company-logo,
+  .section-eight .upper-footer .company-contact,
+  .section-eight .upper-footer .footer-navigation,
+  .section-eight .upper-footer .follow-us {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .section-eight .company-logo #logo {
+    padding-right: -0.5rem;
+  }
+  .section-eight .copyright {
+    padding-left: 1rem;
+  }
+}
+@media (max-width: 912px) {
+  .nav-links .link p {
+    display: none;
+  }
+  .showcase img {
+    height: 60vh;
+  }
+  .showcase .circles .circle-1,
+  .showcase .circles .circle-2,
+  .showcase .circles .circle-3,
+  .showcase .circles .circle-4 {
+    width: 25px;
+    height: 25px;
+  }
+  .section-one .left-side img {
+    width: 370px;
+  }
+  .section-one .right-side {
+    padding-right: 0.5rem;
+  }
+  .section-one .right-side .about-text-title {
+    margin-bottom: 0rem;
+  }
+  .section-one .right-side .about-text {
+    margin-bottom: 3.3rem;
+  }
+  .section-one .right-side .bottom-line-grey {
+    width: 400px;
+  }
+  .section-two img {
+    height: 40vh;
+  }
+  .section-five .dvg-in-numbers .numbers {
+    margin-right: 2rem;
+  }
+  .section-eight {
+    height: 28vh;
+  }
+  .section-eight .copyright p {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 821px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  .nav-links {
+    display: none;
+  }
 }

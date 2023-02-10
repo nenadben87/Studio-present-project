@@ -14,6 +14,8 @@ const chevronRight = document.querySelector("#chevron-right")
 
 let i = 0;
 
+const width = document.body.clientWidth
+
 chevronRight.addEventListener("click", forwardImage)
 chevronLeft.addEventListener("click", backwardImage)
 
@@ -272,9 +274,13 @@ function moveLeft(){
    }
 }
 
-const width = document.body.clientWidth
+// Hamburger Menu
+const hamburger = document.querySelector('.hamburger')
+const hamLineTwo = document.querySelector('.ham-line-2')
 
-// if(width <= 1280){
-//     productsImages.style.overflowX = 'hidden'
-//     productsImagesBefore.style.overflowX = 'hidden'
-// }
+hamburger.addEventListener('click', toggleHamburger);
+
+function toggleHamburger() {
+  hamburger.classList.toggle('active');
+  hamLineTwo.classList.toggle('active');
+}
