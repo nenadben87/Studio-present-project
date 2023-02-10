@@ -276,11 +276,27 @@ function moveLeft(){
 
 // Hamburger Menu
 const hamburger = document.querySelector('.hamburger')
+
 const hamLineTwo = document.querySelector('.ham-line-2')
+const hamLineOne = document.querySelector('.ham-line-1')
+const hamLineThree = document.querySelector('.ham-line-3')
+
+const hamWrapper = document.querySelector('.ham-wrapper')
+const hamburgerNav = document.querySelector('.hamburger-nav')
 
 hamburger.addEventListener('click', toggleHamburger);
 
 function toggleHamburger() {
   hamburger.classList.toggle('active');
   hamLineTwo.classList.toggle('active');
+  hamLineOne.classList.toggle('active');
+  hamLineThree.classList.toggle('active');
+
+  hamWrapper.classList.toggle('active')
+  hamburgerNav.classList.toggle('active')
+
+  if(hamburgerNav.classList.contains('active')){
+    chevronLeft.style.zIndex = '-1'
+    chevronRight.style.zIndex = '-1'
+  }
 }

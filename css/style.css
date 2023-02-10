@@ -112,6 +112,13 @@ li {
 .hamburger .ham-line-2 {
   margin-bottom: 0.5rem;
 }
+.hamburger .ham-line-1,
+.hamburger .ham-line-3 {
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+  transition: -webkit-transform 0.5s ease-in;
+  transition: transform 0.5s ease-in;
+  transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+}
 
 .hamburger.active {
   border: 1px solid #D9D9D9;
@@ -119,6 +126,82 @@ li {
 
 .ham-line-2.active {
   display: none;
+}
+
+.ham-line-1.active {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  margin-left: 5px;
+}
+
+.ham-line-3.active {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.ham-wrapper {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 40vw;
+  height: 0vh;
+  background-color: #BF0F0F;
+  z-index: 1;
+  opacity: 0.5;
+  -webkit-transition: height 0.4s ease-in;
+  transition: height 0.4s ease-in;
+}
+
+.hamburger-nav {
+  position: absolute;
+  top: 0%;
+  right: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  z-index: 1;
+  padding-top: 0.5rem;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
+}
+.hamburger-nav .ham-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 0.7rem;
+}
+.hamburger-nav .ham-link a {
+  color: #fff;
+}
+
+.ham-wrapper.active {
+  height: 40vh;
+}
+
+.hamburger-nav.active {
+  opacity: 1;
 }
 
 .languages {

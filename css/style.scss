@@ -115,15 +115,88 @@ li {
     .ham-line-2 {
       margin-bottom: 0.5rem;
     }
+
+    .ham-line-1,
+    .ham-line-3 {
+      transition: transform 0.5s ease-in;
+    }
 }
 
 // Active classes for hamburger
 .hamburger.active {
   border: 1px solid $navbar-background;
+  // padding-top: 1.8rem;
 }
 
 .ham-line-2.active {
-  display: none;
+   display: none;
+}
+
+.ham-line-1.active {
+   transform: rotate(45deg);
+    transform-origin: top left;
+    // width: 45px;
+    margin-left: 5px;
+}
+.ham-line-3.active {
+  transform: rotate(-45deg);
+  margin-top: 1rem;
+  margin-right: 1rem;
+  // width: 45px;
+  // transform-origin: top left;
+}
+
+.ham-wrapper {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 40vw;
+  height: 0vh;
+  background-color: $red-color;
+  z-index: 1;
+  opacity: 0.5;
+  // display: none;
+  transition: height 0.4s ease-in;
+}
+
+.hamburger-nav {
+  position: absolute;
+  top: 0%;
+  right: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+  padding-top: 0.5rem;
+  // display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+
+    .ham-link {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      margin-bottom: 0.7rem;
+
+        a {
+          color: #fff;
+        }
+    }
+}
+
+// Active classes for ham nav
+// .ham-wrapper.active,
+// .hamburger-nav.active {
+//   display: block;
+// }
+.ham-wrapper.active {
+  height: 40vh;
+}
+.hamburger-nav.active {
+  opacity: 1;
 }
 
 .languages {
