@@ -6,6 +6,18 @@
   .dvg-in-numbers .numbers p {
     font-size: 1.1rem;
   }
+}
+@media (max-width: 1280px) and (max-width: 1193px) {
+  .nav-links .link {
+    padding: 10px 30px;
+  }
+}
+@media (max-width: 1280px) and (max-width: 1064px) {
+  .nav-links .link {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 1280px) {
   .products-slider .arrow-left {
     width: 80px;
   }

@@ -402,10 +402,27 @@ function changeColorMode(){
 }
 
 // Scroll Effect
+const modal = document.querySelector('.modal')
+const modalBtn = document.querySelector('.modal-btn')
+
 window.addEventListener('scroll', showModal)
+modalBtn.addEventListener('click', removeModal)
+
+let scrollInc = 0;
 
 function showModal(){
-  if(window.pageYOffset === 300){
-    console.log('trigger here')
+  scrollInc++
+  if(window.pageYOffset === 300 && scrollInc < 40){
+    modal.classList.add('active')
+  }
+
+  if(modal.classList.contains('active')){
+    window.scrollTo(0,0)
   }
 }
+
+function removeModal(){
+  modal.classList.remove('active')
+}
+
+console.log(document.body.clientWidth)
