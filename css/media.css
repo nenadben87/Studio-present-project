@@ -157,8 +157,429 @@
     margin-left: 1rem;
     margin-right: 1rem;
   }
+  .section-eight {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section-eight .upper-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section-eight .company-logo,
+  .section-eight .company-contact,
+  .section-eight .footer-navigation,
+  .section-eight .follow-us {
+    margin-left: 0;
+    margin-right: 0;
+  }
   .section-eight .company-logo {
-    margin-left: 1rem;
-    margin-right: 0rem;
+    width: 120px;
+    padding-left: 0;
+  }
+  .section-eight .follow-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 140px;
+  }
+  .section-eight .follow-us .social-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+  }
+  .section-eight .follow-us .social-icons i {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+  .section-eight .copyright {
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .ham-wrapper.active {
+    height: 47vh;
+  }
+  .section-one .bottom-line-grey {
+    margin-top: 1rem;
+  }
+  .section-five .dvg-in-numbers {
+    left: 8%;
+  }
+  .section-eight {
+    height: 38vh;
+  }
+  .section-eight .company-logo {
+    width: 130px;
+  }
+  .section-eight .footer-navigation {
+    width: 140px;
+  }
+  .section-eight .footer-navigation li {
+    margin-bottom: 0.7rem;
+  }
+  .section-eight .footer-navigation li a {
+    font-size: 0.8rem;
+  }
+  .section-eight .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-eight .copyright .middle-paragraph {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 540px) {
+  .navbar-logo .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-logo .logo-title h2 {
+    font-size: 1rem;
+  }
+  .navbar-logo .logo-title h3 {
+    font-size: 1rem;
+  }
+  .navbar-logo .hamburger {
+    margin-right: 3rem;
+  }
+  .navbar-logo .languages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .showcase .ham-wrapper {
+    width: 50vw;
+  }
+  .showcase .ham-wrapper.active {
+    height: 60vh;
+  }
+  .showcase .ham-link {
+    margin-bottom: 0.2rem;
+  }
+  .showcase .circles {
+    left: 40%;
+  }
+  .showcase .circles .circle-1,
+  .showcase .circles .circle-2,
+  .showcase .circles .circle-3,
+  .showcase .circles .circle-4 {
+    width: 20px;
+    height: 20px;
+  }
+  .section-one .right-side .about-text {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  .section-five .dvg-in-numbers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    left: 14%;
+  }
+  .section-five .dvg-in-numbers .numbers {
+    padding-right: 1rem;
+  }
+  .section-six .our-products-text {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .section-seven .logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-seven .logos .logo {
+    margin-top: 3rem;
+  }
+  .section-eight {
+    height: 80vh;
+  }
+  .section-eight .upper-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-eight .upper-footer .follow-us {
+    padding-top: 3rem;
+  }
+  .section-eight .upper-footer .company-contact,
+  .section-eight .upper-footer .footer-navigation,
+  .section-eight .upper-footer .follow-us {
+    border-left: 1px solid transparent;
+  }
+  .section-eight .upper-footer .company-contact {
+    border-bottom: 1px solid #fff;
+  }
+  .section-eight .upper-footer .company-contact,
+  .section-eight .upper-footer .follow-us {
+    margin-right: 0.5rem;
+  }
+}
+@media (max-width: 414px) {
+  .navbar-logo .logo .logo-title h2 {
+    font-size: 0.8rem;
+  }
+  .navbar-logo .logo .logo-title h3 {
+    font-size: 0.8rem;
+  }
+  .navbar-logo .hamburger {
+    margin-left: 8rem;
+  }
+  .showcase .ham-wrapper {
+    width: 60vw;
+  }
+  .showcase .ham-wrapper.active {
+    height: 50vh;
+  }
+  .showcase .circles {
+    left: 35%;
+  }
+  .section-three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-five {
+    height: 60vh;
+  }
+  .section-five .dvg-in-numbers {
+    top: 3%;
+    left: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-five .dvg-in-numbers .numbers {
+    margin-bottom: 1.5rem;
+  }
+  .section-seven .logos .logo {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .section-eight {
+    height: 120vh;
+  }
+  .section-eight .upper-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-eight .upper-footer .company-logo {
+    margin-bottom: 2rem;
+    height: 105px;
+  }
+  .section-eight .upper-footer .company-contact {
+    margin-bottom: 2rem;
+  }
+  .section-eight .upper-footer .company-contact .address,
+  .section-eight .upper-footer .company-contact .phone,
+  .section-eight .upper-footer .company-contact .email {
+    font-size: 1.2rem;
+  }
+  .section-eight .upper-footer .footer-navigation {
+    border-bottom: 1px solid #fff;
+  }
+  .section-eight .upper-footer .footer-navigation li {
+    margin-bottom: 1rem;
+  }
+  .section-eight .upper-footer .footer-navigation li a {
+    font-size: 1.2rem;
+  }
+  .section-eight .upper-footer .follow-us {
+    width: 100vw;
+    padding-left: 6rem;
+  }
+  .section-eight .upper-footer .follow-us p {
+    margin-left: 2rem;
+  }
+  .section-eight .upper-footer .follow-us .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 200px;
+    overflow-x: visible;
+    padding-left: 1rem;
+  }
+  .section-eight .upper-footer .follow-us .social-icons i {
+    font-size: 2rem;
+    width: 35px;
+  }
+  .section-eight .copyright p {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 412px) {
+  .section-eight .copyright .middle-paragraph {
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+@media (max-width: 393px) {
+  .section-eight {
+    height: 130vh;
+    width: 100vw;
+  }
+}
+@media (max-width: 390px) {
+  .section-eight {
+    height: 135vh;
+    width: 100vw;
+  }
+  .section-eight .copyright {
+    font-size: 1.2rem;
+  }
+  .section-eight .copyright .middle-paragraph {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 375px) {
+  .showcase .ham-wrapper {
+    width: 65vw;
+  }
+  .showcase .ham-wrapper.active {
+    height: 60vh;
+  }
+  .section-five {
+    height: 70vh;
+  }
+  .section-five .dvg-in-numbers .numbers h3 {
+    font-size: 1.4rem;
+  }
+  .section-eight {
+    height: 170vh;
+  }
+}
+@media (max-width: 360px) {
+  .section-eight {
+    height: 155vh;
+  }
+  .section-eight .copyright p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  .navbar-logo .logo .logo-title h2 {
+    font-size: 0.5rem;
+  }
+  .navbar-logo .logo .logo-title h3 {
+    font-size: 0.4rem;
+  }
+  .navbar-logo .ham-lang .languages {
+    margin-right: 0.5rem;
+  }
+  .navbar-logo .ham-lang .languages a {
+    font-size: 0.7rem;
+  }
+  .navbar-logo .ham-lang .hamburger {
+    width: 54px;
+    height: 45px;
+  }
+  .navbar-logo .ham-lang .hamburger .ham-line-1,
+  .navbar-logo .ham-lang .hamburger .ham-line-2,
+  .navbar-logo .ham-lang .hamburger .ham-line-3 {
+    width: 44px;
+    height: 2px;
+  }
+  .showcase .circles {
+    left: 34%;
+  }
+  .showcase .circles .circle-1,
+  .showcase .circles .circle-2,
+  .showcase .circles .circle-3,
+  .showcase .circles .circle-4 {
+    width: 15px;
+    height: 15px;
+  }
+  .showcase .hamburger-nav .ham-link p {
+    display: none;
+  }
+  .showcase .ham-wrapper.active {
+    height: 50vh;
+  }
+  .section-one .right-side .about-text-title h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .section-one .right-side .bottom-line-grey {
+    width: 80vw;
+  }
+  .section-five {
+    height: 80vh;
+  }
+  .section-five .dvg-in-numbers {
+    left: 19%;
+  }
+  .section-eight {
+    height: 201vh;
   }
 }

@@ -210,18 +210,22 @@ const arrowRight = document.querySelector('.arrow-right-icon');
 const productsImages = document.querySelector('.products-images');
 const productsImagesBefore = document.querySelector('.products-images-before')
 
-arrowRight.addEventListener('click', moveRight);
-arrowLeft.addEventListener('click', moveLeft);
+// arrowRight.addEventListener('click', moveRight);
+// arrowLeft.addEventListener('click', moveLeft);
+arrowLeft.addEventListener('click', moveRight)
+arrowRight.addEventListener('click', moveLeft)
 
 let inc = 0;
 
 if(inc === 0){
-  arrowLeft.disabled = true;
+  // arrowLeft.disabled = true;
+  arrowRight.disabled = true
 }
 
 function moveRight(){
   inc++;
-  arrowLeft.disabled = false;
+  // arrowLeft.disabled = false;
+  arrowRight.disabled = false
 
    if(inc === 1){
     productsImages.style.transform = 'translateX(-348px)';
@@ -243,13 +247,15 @@ function moveRight(){
   if(inc === 5){
     productsImages.style.transform = 'translateX(580px)';
     productsImagesBefore.style.transform = 'translateX(599px)';
-    arrowRight.disabled = true
+    arrowLeft.disabled = true
   }
+  console.log(inc)
 }
 
 function moveLeft(){
   inc--;
-  arrowRight.disabled = false;
+  //arrowRight.disabled = false;
+  arrowLeft.disabled = false;
 
   if(inc === 4){
     productsImages.style.transform = 'translateX(348px)';
@@ -270,8 +276,9 @@ function moveLeft(){
    if(inc === 0){
     productsImages.style.transform = 'translateX(-580px)';
     productsImagesBefore.style.transform = 'translateX(-561px)';
-    arrowLeft.disabled = true
+    arrowRight.disabled = true
    }
+   console.log(inc)
 }
 
 // Hamburger Menu
@@ -298,5 +305,107 @@ function toggleHamburger() {
   if(hamburgerNav.classList.contains('active')){
     chevronLeft.style.zIndex = '-1'
     chevronRight.style.zIndex = '-1'
+
+    circleOne.style.zIndex = '-1'
+    circleTwo.style.zIndex = '-1'
+    circleThree.style.zIndex = '-1'
+    circleFour.style.zIndex = '-1'
+  } else {
+    chevronLeft.style.zIndex = '1'
+    chevronRight.style.zIndex = '1'
+
+    circleOne.style.zIndex = '1'
+    circleTwo.style.zIndex = '1'
+    circleThree.style.zIndex = '1'
+    circleFour.style.zIndex = '1'
+  }
+}
+
+// Responsive Design
+const navbarLogo = document.querySelector('.navbar-logo')
+
+if(width <= 540){
+  navbarLogo.innerHTML = `<div class="logo">
+  <div class="logo-image">
+  <img src="./img/Logo.png" alt="" id="logo">
+  <img src="./img/Logo-piece-1.png" alt="" id="logo-piece-1">
+  <img src="./img/Logo-piece-2.png" alt="" id="logo-piece-2">
+  <img src="./img/Logo-piece-3.png" alt="" id="logo-piece-3">
+  </div>
+ <div class="logo-title">
+  <h2>DVG COMPANY</h2>
+  <h3>SUBOTICA</h3>
+ </div>
+</div>
+
+<div class="ham-lang" style="display:flex; flex-direction:column-reverse;">
+<div class="hamburger" onclick="toggleHam()"">
+<div class="ham-line ham-line-1"></div>
+<div class="ham-line ham-line-2"></div>
+<div class="ham-line ham-line-3"></div>
+</div> 
+
+<div class="languages">
+<a href="">Srpski</a>
+<a href="">English</a>
+<a href="">Magyar</a>
+</div>
+</div>
+`;
+
+function toggleHam(){
+  toggleHamburger()
+  const hamburger = document.querySelector('.hamburger')
+  const hamLineTwo = document.querySelector('.ham-line-2')
+  const hamLineOne = document.querySelector('.ham-line-1')
+  const hamLineThree = document.querySelector('.ham-line-3')
+
+  hamburger.classList.toggle('active')
+  hamLineTwo.classList.toggle('active');
+  hamLineOne.classList.toggle('active');
+  hamLineThree.classList.toggle('active');
+}
+
+  const dvgNumbers = document.querySelector('.dvg-in-numbers')
+  dvgNumbers.children[1].classList.remove('border-right')
+
+  const ourProductsText = document.querySelector('.our-products-text')
+  ourProductsText.innerHTML = `<p>
+  Nase Proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna
+  nega lica i tela. Uspeli smo da uskladimo kvalitet i cenu, sto su prepoznali i nasi
+  kupci
+      </p>`;
+}
+
+if(width <= 414){
+  const dvgNumbers = document.querySelector('.dvg-in-numbers')
+  dvgNumbers.children[0].classList.remove('border-right')
+  dvgNumbers.children[2].classList.remove('border-right')
+}
+
+// Light Dark mode
+
+const lightDarkBtn = document.querySelector('.light-dark-btn');
+const body = document.querySelector('body')
+
+lightDarkBtn.addEventListener('click', changeColorMode);
+
+function changeColorMode(){
+  lightDarkBtn.classList.toggle('dark')
+  body.classList.toggle('dark')
+
+  if(lightDarkBtn.classList.contains('dark')){
+    lightDarkBtn.textContent = 'Light Mode'
+  } else {
+    lightDarkBtn.textContent = 'Dark Mode'
+  }
+}
+
+// Scroll Effect
+window.addEventListener('scroll', showModal)
+
+function showModal(){
+  if(window.pageYOffset === 300){
+    console.log('trigger here')
   }
 }

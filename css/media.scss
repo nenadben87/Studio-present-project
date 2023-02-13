@@ -207,9 +207,503 @@
   }
 
   .section-eight {
-    .company-logo {
-      margin-left: 1rem;
-      margin-right: 0rem;
+    justify-content: flex-start;
+
+    .upper-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
     }
+    
+    .company-logo,
+    .company-contact,
+    .footer-navigation,
+    .follow-us {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    .company-logo {
+      width: 120px;
+      padding-left: 0;
+    }
+
+    .follow-us {
+      display: flex;
+      flex-direction: column;
+      width: 140px;
+
+      .social-icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 1rem;
+           i {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+           }
+      }
+    }
+
+    .copyright {
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .ham-wrapper.active {
+    height: 47vh;
+  }
+
+  .section-one {
+    .bottom-line-grey {
+      margin-top: 1rem;
+    }
+  }
+
+  .section-five {
+    .dvg-in-numbers {
+      left: 8%;
+    }
+  }
+
+  .section-eight {
+    height: 38vh;
+
+      .company-logo {
+        width: 130px;
+      }
+
+      .footer-navigation {
+        width: 140px;
+          li {
+            margin-bottom: 0.7rem;
+
+              a {
+                font-size: 0.8rem;
+              }
+          }
+      }
+
+      .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+          .middle-paragraph {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+          }
+      }
+  }
+}
+
+@media (max-width: 540px){
+  .navbar-logo {
+     
+    .logo {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      h2 {
+        font-size: 1rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+    }
+
+    .hamburger {
+      margin-right: 3rem;
+    }
+
+    .languages {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+
+  .showcase {
+    .ham-wrapper {
+      width: 50vw;
+    }
+
+    .ham-wrapper.active {
+      height: 60vh;
+    }
+
+    .ham-link {
+      margin-bottom: 0.2rem;
+    }
+
+    .circles {
+      left: 40%;
+      .circle-1,
+      .circle-2,
+      .circle-3,
+      .circle-4 {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .section-one {
+    .right-side {
+      .about-text {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+      }
+    }
+  }
+
+  .section-five {
+    .dvg-in-numbers {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      left: 14%;
+        
+        .numbers {
+          padding-right: 1rem;
+        }
+    }
+  }
+
+  .section-six {
+    .our-products-text {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+
+  .section-seven {
+    .logos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+        .logo {
+          margin-top: 3rem;
+        }
+    }
+  }
+
+  .section-eight {
+    height: 80vh;
+    .upper-footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+        .follow-us {
+          padding-top: 3rem;
+        }
+
+        .company-contact,
+        .footer-navigation,
+        .follow-us {
+          border-left: 1px solid transparent
+    }
+
+       .company-contact {
+        border-bottom: 1px solid #fff;
+       }
+
+       .company-contact,
+       .follow-us {
+        margin-right: 0.5rem;
+       }
+    }
+  }
+}
+
+@media (max-width: 414px){
+  .navbar-logo {
+    .logo {
+      .logo-title {
+        h2 {
+          font-size: 0.8rem;
+        }
+        h3 {
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .hamburger {
+      margin-left: 8rem;
+    }
+  }
+
+  .showcase {
+    .ham-wrapper {
+      width: 60vw;
+    }
+    .ham-wrapper.active {
+      height: 50vh;
+    }
+
+    .circles {
+      left: 35%;
+    }
+  }
+
+  .section-three {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-five {
+    height: 60vh;
+   .dvg-in-numbers {
+    top: 3%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+
+      .numbers {
+        margin-bottom: 1.5rem;
+      }
+   }
+  }
+
+  .section-seven {
+    .logos {
+      .logo {
+        margin-left: 3rem;
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  .section-eight {
+    height: 120vh;
+
+      .upper-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+          
+           .company-logo {
+            margin-bottom: 2rem;
+            height: 105px;
+           }
+           
+           .company-contact {
+            margin-bottom: 2rem;
+            .address,
+            .phone,
+            .email {
+              font-size: 1.2rem;
+            }
+           }
+
+           .footer-navigation {
+            border-bottom: 1px solid #fff;
+            li {
+              margin-bottom: 1rem;
+              a {
+                font-size: 1.2rem;
+              }
+            }
+           }
+
+           .follow-us {
+            width: 100vw;
+            padding-left: 6rem;
+             p {
+              margin-left: 2rem;
+             }
+            .social-icons {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              width: 200px;
+              overflow-x: visible;
+              padding-left: 1rem;
+              // padding-right: 1rem;
+
+                i {
+                  font-size: 2rem;
+                  width: 35px;
+                }
+            }
+           }
+      }
+
+      .copyright {
+        p {
+          font-size: 0.7rem;
+        }
+      }
+  }
+}
+
+@media (max-width: 412px){
+  .section-eight {
+    .copyright {
+      .middle-paragraph {
+        padding-bottom: 1.5rem;
+        padding-top: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 393px){
+  .section-eight {
+    height: 130vh;
+    width: 100vw;
+      
+    }
+  }
+      
+  
+  @media (max-width: 390px){
+    .section-eight {
+      height: 135vh;
+      width: 100vw;
+        .copyright {
+          font-size: 1.2rem;
+            .middle-paragraph {
+              padding-top: 2rem;
+              padding-bottom: 3rem;
+            }
+        }
+      }
+    }
+
+@media (max-width: 375px){
+  .showcase {
+    .ham-wrapper {
+      width: 65vw;
+    }
+
+    .ham-wrapper.active {
+      height: 60vh;
+    }
+  }
+
+  .section-five {
+    height: 70vh;
+      .dvg-in-numbers {
+        .numbers {
+          h3 {
+            font-size: 1.4rem;
+          }
+        }
+      }
+  }
+
+  .section-eight {
+    height: 170vh;
+  }
+}
+
+@media (max-width: 360px){
+  .section-eight {
+    height: 155vh;
+
+     .copyright {
+      p {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+     }
+  }
+}
+
+@media (max-width: 320px){
+  .navbar-logo {
+    .logo {
+      .logo-title {
+        h2 {
+          font-size: 0.5rem;
+        }
+        h3 {
+          font-size: 0.4rem;
+        }
+      }
+    }
+
+    .ham-lang {
+      .languages {
+        margin-right: 0.5rem;
+          a{
+            font-size: 0.7rem;
+          }
+      }
+
+      .hamburger {
+        width: 54px;
+        height: 45px;
+         .ham-line-1,
+         .ham-line-2,
+         .ham-line-3 {
+          width: 44px;
+          height: 2px;
+         }
+      }
+    }
+  }
+
+  .showcase {
+    .circles {
+      left: 34%;
+      .circle-1,
+      .circle-2,
+      .circle-3,
+      .circle-4 {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    .hamburger-nav {
+      .ham-link {
+        p {
+          display: none;
+        }
+      }
+    }
+
+    .ham-wrapper.active {
+      height: 50vh;
+    }
+  }
+
+  .section-one {
+    .right-side {
+      .about-text-title {
+        h3 {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+
+      .bottom-line-grey {
+        width: 80vw;
+      }
+    }
+  }
+
+  .section-five {
+    height: 80vh;
+      .dvg-in-numbers {
+        left: 19%;
+      }
+  }
+
+  .section-eight {
+    height: 201vh;
+      
   }
 }

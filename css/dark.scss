@@ -1,0 +1,53 @@
+$nav-dark: #828282;
+
+$dark-color: #333;
+$light-color: #fff;
+
+.light-dark-btn.dark {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
+body.dark {
+  background-color: #828282;
+    a,
+    li,
+    p,
+    h3,
+    h2,
+    div {
+      color: $light-color;
+    }
+    .nav-links {
+      .link {
+        a {
+          color: #fff;
+        }
+        p {
+          color: #fff;
+        }
+      }
+    }
+
+    .section-one {
+      background-color: #828282;
+    }
+
+    .section-six {
+      background-color: #828282;
+
+      .products-images-before,
+      .products-images {
+        p {
+          color: #333;
+        }
+      }
+    }
+
+    .arrow-right,
+    .arrow-left {
+      background-color: #828282;
+    }
+    
+}

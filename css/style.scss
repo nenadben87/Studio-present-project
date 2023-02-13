@@ -10,6 +10,10 @@
   $grey-color: #C4C4C466;
   $light-grey-color: #f4f4f4;
 
+  $dark-color: #333;
+  $light-color: #fff;
+
+  $nav-dark: #828282;
 
   //  General styling  //////////////////////////////////
 * {
@@ -30,6 +34,22 @@ a {
 
 li {
   list-style: none;
+}
+
+// Modal //////////////////////////////
+body {
+  position: relative;
+}
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.8;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding-top: 7rem;
 }
 
 // Navbar /////////////////////////////////////////////
@@ -85,12 +105,25 @@ li {
   flex-direction: column;
 }
 
-.logo {
-  i {
-    font-size: 3rem;
-    margin-right: 0.5rem;
-    margin-top: 0.3rem;
-  }
+.logo-wrapper {
+  display: flex;
+  flex-direction: row;
+    .logo {
+      margin-right: 1rem;
+    }
+
+    .light-dark-btn {
+      width: 100px;
+      height: 30px;
+      margin-top: 3rem;
+      background-color: $dark-color;
+      border: 1px solid $light-color;
+      color: $light-color;
+      border-radius: 5px;
+    }
+    .light-dark-btn:hover {
+      cursor: pointer;
+    }
 }
 
 // hamburger menu /////////////////////////////////
@@ -419,11 +452,43 @@ li {
 
 // Section Two  ///////////////////////////////////////////////
 .section-two {
-  img {
-    width: 100%;
-    height: 70vh;
-    padding-bottom: 2rem;
-  }
+  position: relative;
+  background: url('../img/truck.jpg') no-repeat center center/cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 3rem;
+  padding-bottom: 20rem;
+}
+
+.section-two::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.7;
+}
+
+.parallax-content {
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  z-index: 1;
+     h3 {
+      color: #fff;
+      margin-bottom: 0.5rem;
+      font-size: 2.2rem;
+     }
+    .parallax-bottom-line {
+      width: 70px;
+      height: 5px;
+      background-color: $red-color;
+      margin-left: 10rem;
+      // margin-bottom: 20rem;
+    }
 }
 
 // Section Three  /////////////////////////////////////////////
@@ -955,7 +1020,7 @@ li {
     }
 
 
-    .addres-text {
+    .address-text {
       display: flex;
       flex-direction: column;
     }

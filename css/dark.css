@@ -1,0 +1,37 @@
+.light-dark-btn.dark {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+}
+
+body.dark {
+  background-color: #828282;
+}
+body.dark a,
+body.dark li,
+body.dark p,
+body.dark h3,
+body.dark h2,
+body.dark div {
+  color: #fff;
+}
+body.dark .nav-links .link a {
+  color: #fff;
+}
+body.dark .nav-links .link p {
+  color: #fff;
+}
+body.dark .section-one {
+  background-color: #828282;
+}
+body.dark .section-six {
+  background-color: #828282;
+}
+body.dark .section-six .products-images-before p,
+body.dark .section-six .products-images p {
+  color: #333;
+}
+body.dark .arrow-right,
+body.dark .arrow-left {
+  background-color: #828282;
+}

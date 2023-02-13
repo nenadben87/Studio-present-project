@@ -19,6 +19,26 @@ li {
   list-style: none;
 }
 
+body {
+  position: relative;
+}
+
+.modal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.8;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 7rem;
+}
+
 .navbar-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,10 +106,29 @@ li {
           flex-direction: column;
 }
 
-.logo i {
-  font-size: 3rem;
-  margin-right: 0.5rem;
-  margin-top: 0.3rem;
+.logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.logo-wrapper .logo {
+  margin-right: 1rem;
+}
+.logo-wrapper .light-dark-btn {
+  width: 100px;
+  height: 30px;
+  margin-top: 3rem;
+  background-color: #333;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+}
+.logo-wrapper .light-dark-btn:hover {
+  cursor: pointer;
 }
 
 .hamburger {
@@ -440,10 +479,43 @@ li {
   font-size: 1rem;
 }
 
-.section-two img {
+.section-two {
+  position: relative;
+  background: url("../img/truck.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
   width: 100%;
-  height: 70vh;
-  padding-bottom: 2rem;
+  height: 500px;
+  margin-bottom: 3rem;
+  padding-bottom: 20rem;
+}
+
+.section-two::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.7;
+}
+
+.parallax-content {
+  position: absolute;
+  top: 40%;
+  left: 33%;
+  z-index: 1;
+}
+.parallax-content h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 2.2rem;
+}
+.parallax-content .parallax-bottom-line {
+  width: 70px;
+  height: 5px;
+  background-color: #BF0F0F;
+  margin-left: 10rem;
 }
 
 .section-three {
@@ -1052,7 +1124,7 @@ li {
 .section-eight .email i {
   margin-right: 0.7rem;
 }
-.section-eight .addres-text {
+.section-eight .address-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
