@@ -325,33 +325,33 @@ function toggleHamburger() {
 const navbarLogo = document.querySelector('.navbar-logo')
 
 if(width <= 540){
-  navbarLogo.innerHTML = `<div class="logo">
-  <div class="logo-image">
-  <img src="./img/Logo.png" alt="" id="logo">
-  <img src="./img/Logo-piece-1.png" alt="" id="logo-piece-1">
-  <img src="./img/Logo-piece-2.png" alt="" id="logo-piece-2">
-  <img src="./img/Logo-piece-3.png" alt="" id="logo-piece-3">
-  </div>
- <div class="logo-title">
-  <h2>DVG COMPANY</h2>
-  <h3>SUBOTICA</h3>
- </div>
-</div>
+//   navbarLogo.innerHTML = `<div class="logo">
+//   <div class="logo-image">
+//   <img src="./img/Logo.png" alt="" id="logo">
+//   <img src="./img/Logo-piece-1.png" alt="" id="logo-piece-1">
+//   <img src="./img/Logo-piece-2.png" alt="" id="logo-piece-2">
+//   <img src="./img/Logo-piece-3.png" alt="" id="logo-piece-3">
+//   </div>
+//  <div class="logo-title">
+//   <h2>DVG COMPANY</h2>
+//   <h3>SUBOTICA</h3>
+//  </div>
+// </div>
 
-<div class="ham-lang" style="display:flex; flex-direction:column-reverse;">
-<div class="hamburger" onclick="toggleHam()"">
-<div class="ham-line ham-line-1"></div>
-<div class="ham-line ham-line-2"></div>
-<div class="ham-line ham-line-3"></div>
-</div> 
+// <div class="ham-lang" style="display:flex; flex-direction:column-reverse;">
+// <div class="hamburger" onclick="toggleHam()"">
+// <div class="ham-line ham-line-1"></div>
+// <div class="ham-line ham-line-2"></div>
+// <div class="ham-line ham-line-3"></div>
+// </div> 
 
-<div class="languages">
-<a href="">Srpski</a>
-<a href="">English</a>
-<a href="">Magyar</a>
-</div>
-</div>
-`;
+// <div class="languages">
+// <a href="">Srpski</a>
+// <a href="">English</a>
+// <a href="">Magyar</a>
+// </div>
+// </div>
+// `;
 
 function toggleHam(){
   toggleHamburger()
@@ -404,9 +404,11 @@ function changeColorMode(){
 // Scroll Effect
 const modal = document.querySelector('.modal')
 const modalBtn = document.querySelector('.modal-btn')
+const xMark = document.getElementById('x-mark')
 
 window.addEventListener('scroll', showModal)
 modalBtn.addEventListener('click', removeModal)
+xMark.addEventListener('click', removeModal)
 
 let scrollInc = 0;
 
@@ -424,5 +426,3 @@ function showModal(){
 function removeModal(){
   modal.classList.remove('active')
 }
-
-console.log(document.body.clientWidth)

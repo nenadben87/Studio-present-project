@@ -160,8 +160,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 1rem;
-  margin-left: 2rem;
 }
 
 .logo-title {
@@ -175,6 +173,8 @@ body {
 }
 
 .logo-wrapper {
+  padding-top: 15px;
+  padding-left: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,7 +205,6 @@ body {
   border: 2px solid #BF0F0F;
   border-radius: 5px;
   margin-top: 1rem;
-  margin-left: 12rem;
   padding-top: 0.7rem;
   padding-left: 0.2rem;
 }
@@ -319,15 +318,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 1rem;
-  margin-right: 2rem;
 }
 
 .languages a {
   text-decoration: none;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  margin-top: 0.8rem;
   font-family: Roboto;
   font-weight: 400;
   font-size: 14px;

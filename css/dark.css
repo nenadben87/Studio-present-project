@@ -35,3 +35,6 @@ body.dark .arrow-right,
 body.dark .arrow-left {
   background-color: #828282;
 }
+body.dark .modal .modal-body h3 {
+  color: #333;
+}

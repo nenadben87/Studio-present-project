@@ -14,21 +14,7 @@
     }
   }
 
-  @media (max-width: 1193px){
-    .nav-links {
-      .link {
-        padding: 10px 30px;
-      }
-    }
-  }
-
-  @media (max-width: 1064px){
-    .nav-links {
-      .link {
-        padding: 10px 20px;
-      }
-    }
-  }
+  
 
   // Section Six
    .products-slider {
@@ -47,11 +33,34 @@
    }
 }
 
+@media (max-width: 1193px){
+  .nav-links {
+    .link {
+      padding: 10px 30px;
+    }
+  }
+}
+
+@media (max-width: 1064px){
+  .nav-links {
+    .link {
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media (max-width: 1026px){
+  .nav-links {
+    .link {
+      padding: 5px 20px;
+    }
+  }
+}
+
 @media (max-width: 1024px){
   .nav-links {
     .link {
-      margin-left: 1rem;
-      margin-right: 1rem;
+      padding: 5px 15px;
     }
   }
 
@@ -118,12 +127,13 @@
     }
 
     .circles {
+      left: 45%;
       .circle-1,
       .circle-2,
       .circle-3,
       .circle-4 {
-        width: 25px;
-        height: 25px;
+        width: 15px;
+        height: 15px;
       }
     }
   }
@@ -187,6 +197,25 @@
 }
 
 @media (max-width: 820px){
+  .navbar-logo {
+    .logo-wrapper {
+      display: flex;
+      flex-direction: column;
+      .logo {
+        display: flex;
+        flex-direction: row;
+      }
+      .light-dark-btn {
+        margin-top: 10px;
+      }
+    }
+
+    .ham-lang {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  
   .nav-links {
     display: none;
   }
