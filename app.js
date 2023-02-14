@@ -288,7 +288,7 @@ const hamLineTwo = document.querySelector('.ham-line-2')
 const hamLineOne = document.querySelector('.ham-line-1')
 const hamLineThree = document.querySelector('.ham-line-3')
 
-const hamWrapper = document.querySelector('.ham-wrapper')
+// const hamWrapper = document.querySelector('.ham-wrapper')
 const hamburgerNav = document.querySelector('.hamburger-nav')
 
 hamburger.addEventListener('click', toggleHamburger);
@@ -299,7 +299,6 @@ function toggleHamburger() {
   hamLineOne.classList.toggle('active');
   hamLineThree.classList.toggle('active');
 
-  hamWrapper.classList.toggle('active')
   hamburgerNav.classList.toggle('active')
 
   if(hamburgerNav.classList.contains('active')){
@@ -322,9 +321,9 @@ function toggleHamburger() {
 }
 
 // Responsive Design
-const navbarLogo = document.querySelector('.navbar-logo')
 
-if(width <= 540){
+
+//if(width <= 540){
 //   navbarLogo.innerHTML = `<div class="logo">
 //   <div class="logo-image">
 //   <img src="./img/Logo.png" alt="" id="logo">
@@ -353,33 +352,34 @@ if(width <= 540){
 // </div>
 // `;
 
-function toggleHam(){
-  toggleHamburger()
-  const hamburger = document.querySelector('.hamburger')
-  const hamLineTwo = document.querySelector('.ham-line-2')
-  const hamLineOne = document.querySelector('.ham-line-1')
-  const hamLineThree = document.querySelector('.ham-line-3')
+// function toggleHam(){
+//   toggleHamburger()
+//   const hamburger = document.querySelector('.hamburger')
+//   const hamLineTwo = document.querySelector('.ham-line-2')
+//   const hamLineOne = document.querySelector('.ham-line-1')
+//   const hamLineThree = document.querySelector('.ham-line-3')
 
-  hamburger.classList.toggle('active')
-  hamLineTwo.classList.toggle('active');
-  hamLineOne.classList.toggle('active');
-  hamLineThree.classList.toggle('active');
-}
+//   hamburger.classList.toggle('active')
+//   hamLineTwo.classList.toggle('active');
+//   hamLineOne.classList.toggle('active');
+//   hamLineThree.classList.toggle('active');
+// }
 
-  const dvgNumbers = document.querySelector('.dvg-in-numbers')
-  dvgNumbers.children[1].classList.remove('border-right')
+//   const dvgNumbers = document.querySelector('.dvg-in-numbers')
+//   dvgNumbers.children[1].classList.remove('border-right')
 
-  const ourProductsText = document.querySelector('.our-products-text')
-  ourProductsText.innerHTML = `<p>
-  Nase Proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna
-  nega lica i tela. Uspeli smo da uskladimo kvalitet i cenu, sto su prepoznali i nasi
-  kupci
-      </p>`;
-}
+//   // const ourProductsText = document.querySelector('.our-products-text')
+//   // ourProductsText.innerHTML = `<p>
+//   // Nase Proizvode DVG Cosmetics odlikuje visok kvalitet kojim se dobija kompletna
+//   // nega lica i tela. Uspeli smo da uskladimo kvalitet i cenu, sto su prepoznali i nasi
+//   // kupci
+//   //     </p>`;
+// }
 
-if(width <= 414){
+if(width <= 573){
   const dvgNumbers = document.querySelector('.dvg-in-numbers')
   dvgNumbers.children[0].classList.remove('border-right')
+  dvgNumbers.children[1].classList.remove('border-right')
   dvgNumbers.children[2].classList.remove('border-right')
 }
 
