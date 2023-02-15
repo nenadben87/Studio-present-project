@@ -666,6 +666,7 @@ body {
   background-color: #f4f4f4;
   position: relative;
   margin-bottom: 5rem;
+  width: 100%;
      
      h3 {
       font-weight: 400;
@@ -686,6 +687,8 @@ body {
       font-weight: 400;
       font-size: 1rem;
       margin-bottom: 2rem;
+      padding-left: 12px;
+      padding-right: 12px;
         p {
           margin-bottom: 0.5rem;
         }
@@ -694,18 +697,20 @@ body {
      .products-slider {
        display: flex;
        flex-direction: row;
-       z-index: 1;
+        z-index: 1;
      }
 
      .arrow-left {
       color: $red-color;
       position: absolute;
-      top: 44%;
+      top: 39%;
       left: 0%;
       z-index: 1;
-      height: 337px;
-      width: 100px;
       background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 151px 8px;
 
         .arrow-left-icon {
           width: 35px;
@@ -713,8 +718,6 @@ body {
           padding: 0.4rem 0.5rem;
           border: 1px solid $red-color;
           border-radius: 50%;
-          margin-left: 2rem;
-          margin-top: 8rem;
           color: $red-color;
         }
      }
@@ -722,12 +725,16 @@ body {
      .arrow-right {
       color: $red-color;
       position: absolute;
-      top: 44%;
+      top: 39%;
       right: 0%;
       z-index: 1;
-      height: 337px;
-      width: 100px;
+      // height: 337px;
+      // width: 100px;
       background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 151px 8px;
 
          .arrow-right-icon {
           width: 35px;
@@ -735,8 +742,8 @@ body {
           padding: 0.4rem 0.5rem;
           border: 1px solid $red-color;
           border-radius: 50%;
-          margin-left: 2rem;
-          margin-top: 8.3rem;
+          // margin-left: 2rem;
+          // margin-top: 8rem;
           color: $red-color;
          }
      }
@@ -751,16 +758,18 @@ body {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
-      transform: translateX(-580px);
+      // justify-content: center;
+      // transform: translateX(-580px);
+      transform: translateX(616px);
       transition: transform 1s ease-in;
-      z-index: -1; 
+      z-index: -1;
+      margin-left: 16px; 
 
         img {
           width: 232px;
           height: 333px;
-          padding-left: 0.5rem;
-          padding-right: 0.5rem;
+          margin-left: 8px;
+          margin-right: 8px;
         }
 
         #image-1 {
@@ -857,16 +866,16 @@ body {
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      transform: translateX(-561px);
+      transform: translateX(628px);
       transition: transform 1s ease-in;
       z-index: -1;
-      margin-right: 0.7rem; 
+      // margin-right: 0.7rem; 
 
         img {
           width: 232px;
           height: 333px;
-          padding-left: 0.5rem;
-          padding-right: 0.5rem;
+          margin-left: 8px;
+          margin-right: 8px;
         }
 
         #image-1 {
@@ -989,6 +998,8 @@ body {
       align-items: center;
       justify-content: center;
       margin-bottom: 4rem;
+      padding-left: 12px;
+      padding-right: 12px;
 
         .logo {
           display: flex;
@@ -1026,26 +1037,19 @@ body {
 .section-eight {
   background: url('../img/footer-image.png') no-repeat center center/cover;
   width: 100%;
-  height: 50vh;
   color: #fff;
   display: flex;
   flex-direction: column;
-  padding-top: 1rem;
-  justify-content: center;
     .upper-footer {
       display: flex;
       flex-direction: row;
-      margin-bottom: 1.5rem;
-      align-items: center;
       justify-content: center;
-      overflow-y: hidden;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-top: 16px;
+      padding-bottom: 24px;
     }
 
     .company-logo {
-      position: relative;
-
+     position: relative;
       #logo {
         width: 100px;
         height: 100px;
@@ -1053,35 +1057,46 @@ body {
 
       #logo-piece-1{
         position: absolute;
-        top: 20%;
-        left: 10%;
+        top: 10%;
+        left: 7%;
         width: 88px;
       }
       #logo-piece-2{
         position: absolute;
-        top: 38%;
+        top: 20%;
         left: 7%;
         width: 75px;
       }
       #logo-piece-3{
         position: absolute;
-        top: 59%;
-        left: 8%;
+        top: 31%;
+        left: 7%;
       }
     }
   
     .company-contact {
       display: flex;
       flex-direction: column;
+      h2 {
+        margin-bottom: 1.5rem;
+      }
     }
 
     .company-contact,
     .footer-navigation,
     .follow-us {
       border-left: 1px solid #fff;
-      padding-left: 1rem;
+      padding-left: 16px;
     }
 
+    .company-logo,
+    .company-contact,
+    .footer-navigation,
+    .follow-us {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    
     .address,
     .phone,
     .email {
@@ -1109,50 +1124,21 @@ body {
       margin-bottom: 0.5rem;
     }
 
-    .company-logo,
-    .company-contact,
-    .footer-navigation,
     .follow-us {
-      margin-left: 4rem;
-      margin-right: 4rem;
-    }
-
-    .company-contact {
-      h2 {
-        margin-bottom: 1.5rem;
-      }
-   }
-
-   .follow-us {
-    height: 180px;
-    p {
-      margin-bottom: 0.5rem;
-    }
-
-    .social-icons {
-      i {
-        margin-left: 0.4rem;
-        margin-right: 0.5rem;
-      }
-
-      i:hover {
-        cursor: pointer;
+      .social-icons {
+        i {
+          margin-right: 12px;
+        }
       }
     }
-   }
   
    .copyright {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 1rem 2rem 3rem;
+    padding: 30px 10px 30px 10px;
     background-color: #333;
     opacity: 0.7;
-    overflow-y: hidden;
-
-      p {
-        overflow-y: hidden;
-      }
 
        .with-bottom-line {
         border-bottom: 1px solid #fff;

@@ -720,6 +720,7 @@ body {
   background-color: #f4f4f4;
   position: relative;
   margin-bottom: 5rem;
+  width: 100%;
 }
 .section-six h3 {
   font-weight: 400;
@@ -738,6 +739,8 @@ body {
   font-weight: 400;
   font-size: 1rem;
   margin-bottom: 2rem;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .section-six .our-products-text p {
   margin-bottom: 0.5rem;
@@ -755,12 +758,20 @@ body {
 .section-six .arrow-left {
   color: #BF0F0F;
   position: absolute;
-  top: 44%;
+  top: 39%;
   left: 0%;
   z-index: 1;
-  height: 337px;
-  width: 100px;
   background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 151px 8px;
 }
 .section-six .arrow-left .arrow-left-icon {
   width: 35px;
@@ -768,19 +779,25 @@ body {
   padding: 0.4rem 0.5rem;
   border: 1px solid #BF0F0F;
   border-radius: 50%;
-  margin-left: 2rem;
-  margin-top: 8rem;
   color: #BF0F0F;
 }
 .section-six .arrow-right {
   color: #BF0F0F;
   position: absolute;
-  top: 44%;
+  top: 39%;
   right: 0%;
   z-index: 1;
-  height: 337px;
-  width: 100px;
   background-color: #f4f4f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 151px 8px;
 }
 .section-six .arrow-right .arrow-right-icon {
   width: 35px;
@@ -788,8 +805,6 @@ body {
   padding: 0.4rem 0.5rem;
   border: 1px solid #BF0F0F;
   border-radius: 50%;
-  margin-left: 2rem;
-  margin-top: 8.3rem;
   color: #BF0F0F;
 }
 .section-six .arrow-left-icon i:hover,
@@ -808,22 +823,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transform: translateX(-580px);
-          transform: translateX(-580px);
+  -webkit-transform: translateX(616px);
+          transform: translateX(616px);
   -webkit-transition: -webkit-transform 1s ease-in;
   transition: -webkit-transform 1s ease-in;
   transition: transform 1s ease-in;
   transition: transform 1s ease-in, -webkit-transform 1s ease-in;
   z-index: -1;
+  margin-left: 16px;
 }
 .section-six .products-images img {
   width: 232px;
   height: 333px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 .section-six .products-images #image-1 {
   position: relative;
@@ -924,20 +937,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transform: translateX(-561px);
-          transform: translateX(-561px);
+  -webkit-transform: translateX(628px);
+          transform: translateX(628px);
   -webkit-transition: -webkit-transform 1s ease-in;
   transition: -webkit-transform 1s ease-in;
   transition: transform 1s ease-in;
   transition: transform 1s ease-in, -webkit-transform 1s ease-in;
   z-index: -1;
-  margin-right: 0.7rem;
 }
 .section-six .products-images-before img {
   width: 232px;
   height: 333px;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 .section-six .products-images-before #image-1 {
   position: relative;
@@ -1070,6 +1082,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 4rem;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 .section-seven .logos .logo {
   display: -webkit-box;
@@ -1110,7 +1124,6 @@ body {
 .section-eight {
   background: url("../img/footer-image.png") no-repeat center center/cover;
   width: 100%;
-  height: 50vh;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1119,10 +1132,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .section-eight .upper-footer {
   display: -webkit-box;
@@ -1132,16 +1141,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow-y: hidden;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 16px;
+  padding-bottom: 24px;
 }
 .section-eight .company-logo {
   position: relative;
@@ -1152,20 +1156,20 @@ body {
 }
 .section-eight .company-logo #logo-piece-1 {
   position: absolute;
-  top: 20%;
-  left: 10%;
+  top: 10%;
+  left: 7%;
   width: 88px;
 }
 .section-eight .company-logo #logo-piece-2 {
   position: absolute;
-  top: 38%;
+  top: 20%;
   left: 7%;
   width: 75px;
 }
 .section-eight .company-logo #logo-piece-3 {
   position: absolute;
-  top: 59%;
-  left: 8%;
+  top: 31%;
+  left: 7%;
 }
 .section-eight .company-contact {
   display: -webkit-box;
@@ -1176,11 +1180,21 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.section-eight .company-contact h2 {
+  margin-bottom: 1.5rem;
+}
 .section-eight .company-contact,
 .section-eight .footer-navigation,
 .section-eight .follow-us {
   border-left: 1px solid #fff;
-  padding-left: 1rem;
+  padding-left: 16px;
+}
+.section-eight .company-logo,
+.section-eight .company-contact,
+.section-eight .footer-navigation,
+.section-eight .follow-us {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .section-eight .address,
 .section-eight .phone,
@@ -1215,28 +1229,8 @@ body {
 .section-eight .footer-navigation li {
   margin-bottom: 0.5rem;
 }
-.section-eight .company-logo,
-.section-eight .company-contact,
-.section-eight .footer-navigation,
-.section-eight .follow-us {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
-.section-eight .company-contact h2 {
-  margin-bottom: 1.5rem;
-}
-.section-eight .follow-us {
-  height: 180px;
-}
-.section-eight .follow-us p {
-  margin-bottom: 0.5rem;
-}
 .section-eight .follow-us .social-icons i {
-  margin-left: 0.4rem;
-  margin-right: 0.5rem;
-}
-.section-eight .follow-us .social-icons i:hover {
-  cursor: pointer;
+  margin-right: 12px;
 }
 .section-eight .copyright {
   display: -webkit-box;
@@ -1249,13 +1243,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 1rem 2rem 3rem;
+  padding: 30px 10px 30px 10px;
   background-color: #333;
   opacity: 0.7;
-  overflow-y: hidden;
-}
-.section-eight .copyright p {
-  overflow-y: hidden;
 }
 .section-eight .copyright .with-bottom-line {
   border-bottom: 1px solid #fff;
