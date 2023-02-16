@@ -575,3 +575,56 @@
     margin-left: 30px;
   }
 }
+@media (max-width: 537px) {
+  .section-eight .upper-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-eight .upper-footer .footer-navigation {
+    margin-bottom: 30px;
+  }
+  .section-eight .upper-footer .follow-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-eight .upper-footer .company-logo #logo-piece-1 {
+    position: absolute;
+    top: 9%;
+    left: 10%;
+    width: 88px;
+  }
+  .section-eight .upper-footer .company-logo #logo-piece-2 {
+    position: absolute;
+    top: 29%;
+    left: 13%;
+    width: 75px;
+  }
+  .section-eight .upper-footer .company-logo #logo-piece-3 {
+    position: absolute;
+    top: 55%;
+    left: 14%;
+  }
+}

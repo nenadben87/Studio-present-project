@@ -146,8 +146,6 @@ body {
 .logo {
   display: flex;
   flex-direction: row;
-  // margin-top: 1rem;
-  // margin-left: 2rem;
 }
 
 .logo-title {
@@ -185,7 +183,6 @@ body {
   border: 2px solid $red-color;
   border-radius: 5px;
   margin-top: 1rem;
-  // margin-left: 12rem;
   padding-top: 0.7rem;
   padding-left: 0.2rem;
 
@@ -210,7 +207,6 @@ body {
 // Active classes for hamburger
 .hamburger.active {
   border: 1px solid $navbar-background;
-  // padding-top: 1.8rem;
 }
 
 .ham-line-2.active {
@@ -220,29 +216,13 @@ body {
 .ham-line-1.active {
    transform: rotate(45deg);
     transform-origin: top left;
-    // width: 45px;
     margin-left: 5px;
 }
 .ham-line-3.active {
   transform: rotate(-45deg);
   margin-top: 1rem;
   margin-right: 1rem;
-  // width: 45px;
-  // transform-origin: top left;
 }
-
-// .ham-wrapper {
-//   position: absolute;
-//   top: 0%;
-//   right: 0%;
-//   width: 40vw;
-//   height: 0vh;
-//   background-color: $red-color;
-//   z-index: 1;
-//   opacity: 0.5;
-//   // display: none;
-//   transition: height 0.4s ease-in;
-// }
 
 .hamburger-nav {
   position: absolute;
@@ -273,14 +253,6 @@ body {
     }
 }
 
-// Active classes for ham nav
-// .ham-wrapper.active,
-// .hamburger-nav.active {
-//   display: block;
-// }
-// .ham-wrapper.active {
-//   height: 40vh;
-// }
 .hamburger-nav.active {
   opacity: 0.9;
 }
@@ -289,16 +261,11 @@ body {
   display: flex;
   flex-direction: row;
   padding-right: 30px;
-  // margin-top: 1rem;
-  // margin-right: 2rem;
 }
 
 .languages {
   a {
     text-decoration: none;
-    // margin-left: 0.5rem;
-    // margin-right: 0.5rem;
-    // margin-top: 0.8rem;
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;

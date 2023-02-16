@@ -819,3 +819,45 @@
     }
   }
 }
+
+@media (max-width: 537px){
+  .section-eight {
+    .upper-footer {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      align-items: center;
+      justify-content: center;
+        .footer-navigation {
+          margin-bottom: 30px;
+        }
+
+        .follow-us {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .company-logo {
+          #logo-piece-1{
+            position: absolute;
+            top: 9%;
+            left: 10%;
+            width: 88px;
+          }
+          #logo-piece-2{
+            position: absolute;
+            top: 29%;
+            left: 13%;
+            width: 75px;
+          }
+          #logo-piece-3{
+            position: absolute;
+            top: 55%;
+            left: 14%;
+          }
+         }
+    }
+  }
+}
