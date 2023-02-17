@@ -632,7 +632,7 @@ body {
   padding-top: 3rem;
   background-color: #f4f4f4;
   position: relative;
-  margin-bottom: 5rem;
+  // padding-bottom: 5rem;
   width: 100%;
      
      h3 {
@@ -937,11 +937,13 @@ body {
 // Section Seven  //////////////////////////////////////////////
 
 .section-seven {
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-bottom: 4rem;
+  // padding-top: 2rem;
 
     .title {
       text-align: center;
