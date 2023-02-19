@@ -208,10 +208,8 @@ const arrowLeft = document.querySelector('.arrow-left-icon');
 const arrowRight = document.querySelector('.arrow-right-icon');
 
 const productsImages = document.querySelector('.products-images');
-const productsImagesBefore = document.querySelector('.products-images-before')
+const productsImagesBefore = document.querySelector('.products-images-before');
 
-// arrowRight.addEventListener('click', moveRight);
-// arrowLeft.addEventListener('click', moveLeft);
 arrowRight.addEventListener('click', moveRight)
 arrowLeft.addEventListener('click', moveLeft)
 
@@ -219,12 +217,10 @@ let inc = 0;
 
 if(inc === 0){
    arrowLeft.disabled = true;
-  //arrowRight.disabled = true
 }
 
 function moveRight(){
   inc++;
-  // arrowLeft.disabled = false;
   arrowLeft.disabled = false
 
    if(inc === 1){
@@ -255,13 +251,11 @@ function moveRight(){
   } else {
     productsImages.style.marginLeft = '16px'
   }
-  console.log(inc)
 }
 
 function moveLeft(){
   inc--;
   arrowRight.disabled = false;
-   //arrowLeft.disabled = false;
 
   if(inc === 4){
     productsImages.style.transform = 'translateX(-384px)';
@@ -285,7 +279,6 @@ function moveLeft(){
     productsImagesBefore.style.transform = 'translateX(628px)';
     arrowLeft.disabled = true
    }
-   console.log(inc)
 }
 
 // Hamburger Menu
@@ -365,8 +358,7 @@ xMark.addEventListener('click', removeModal)
 let scrollInc = 0;
 
 function showModal(){
-  scrollInc++
-  if(window.pageYOffset === 300 && scrollInc < 40){
+  if(window.pageYOffset === 300 && scrollInc === 0){
     modal.classList.add('active')
   }
 
@@ -376,5 +368,6 @@ function showModal(){
 }
 
 function removeModal(){
+  scrollInc++
   modal.classList.remove('active')
 }
