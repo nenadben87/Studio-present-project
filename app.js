@@ -364,6 +364,11 @@ function showModal(){
 
   if(modal.classList.contains('active')){
     window.scrollTo(0,0)
+    hamburger.classList.remove('active');
+    hamLineTwo.classList.remove('active');
+    hamLineOne.classList.remove('active');
+    hamLineThree.classList.remove('active');
+    hamburgerNav.classList.remove('active');
   }
 }
 
